@@ -30,98 +30,213 @@ $collare->setPrice(2.13);
 $giochi = new Prodotti('Bone', 'Cane', 2, 'Gomma');
 $giochi->setPrice(2.67);
 
-$prodottiPulizia = new Prodotti('Shampoo delicato', 'Gatto', 2, 'Liquido');
+$prodottiPulizia = new Prodotti('Shampoo delicato', 'Gatto', 0, 'Liquido');
 $prodottiPulizia->setPrice(1.15);
 ?>
 <h1>Prodotti presenti nello shop:</h1>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center">
-    <div style="padding: 10px; margin: 10px; width: 25%; border: 1px solid black">
+<div class="container">
+    <div>
         <h2>Prodotti Alimentari</h2>
-        <ul>
-            <li>
-                <p>Nome: <?= $cibo->name ?></p>
-                <p>Tipologia: <?= $cibo->typology ?></p>
-                <p>Quantità: <?= $cibo->quantity ?></p>
-                <p>Materiale: <?= $cibo->material ?></p>
-                <p>Data di scadenza: <?= $cibo->expirationDate ?></p>
-                <p>Gusto: <?= $cibo->taste ?></p>
-                <p>Prezzo: <?= $cibo->price ?></p>
-            </li>
-        </ul>
+        <p>Nome: <?= $cibo->name ?> - Tipologia: <?= $cibo->typology ?> - Quantità: <?= $cibo->quantity ?>
+            - Materiale: <?= $cibo->material ?> - Data di scadenza: <?= $cibo->expirationDate ?>
+            - Gusto: <?= $cibo->taste ?> - Prezzo: <?= $cibo->price ?></p>
     </div>
 
-    <div style="padding: 10px; margin: 10px; width: 25%; border: 1px solid black">
+    <div>
         <h2>Prodotti Riposo</h2>
-        <ul>
-            <li>
-                <p>Nome: <?= $cuccia->name ?></p>
-                <p>Tipologia: <?= $cuccia->typology ?></p>
-                <p>Quantità: <?= $cuccia->quantity ?></p>
-                <p>Materiale: <?= $cuccia->material ?></p>
-                <p>Taglia: <?= $cuccia->size ?></p>
-                <p>Colore: <?= $cuccia->color ?></p>
-                <p>Prezzo: <?= $cuccia->price ?></p>
-            </li>
-        </ul>
+        <p>Nome: <?= $cuccia->name ?> - Tipologia: <?= $cuccia->typology ?> - Quantità: <?= $cuccia->quantity ?> -
+            Materiale: <?= $cuccia->material ?> - Taglia: <?= $cuccia->size ?> - Colore: <?= $cuccia->color ?> -
+            Prezzo: <?= $cuccia->price ?></p>
     </div>
 
-    <div style="padding: 10px; margin: 10px; width: 25%; border: 1px solid black">
+    <div>
         <h2>Prodotti Trasporto</h2>
-        <ul>
-            <li>
-                <p>Nome: <?= $trasportino->name ?></p>
-                <p>Tipologia: <?= $trasportino->typology ?></p>
-                <p>Quantità: <?= $trasportino->quantity ?></p>
-                <p>Materiale: <?= $trasportino->material ?></p>
-                <p>Taglia: <?= $trasportino->size ?></p>
-                <p>Colore: <?= $trasportino->color ?></p>
-                <p>Prezzo: <?= $trasportino->price ?></p>
-            </li>
-        </ul>
+        <p>Nome: <?= $trasportino->name ?> - Tipologia: <?= $trasportino->typology ?> - Quantità: <?= $trasportino->quantity ?> -
+            Materiale: <?= $trasportino->material ?> - Taglia: <?= $trasportino->size ?> - Colore: <?= $trasportino->color ?> -
+            Prezzo: <?= $trasportino->price ?></p>
     </div>
 
-    <div style="padding: 10px; margin: 10px; width: 25%; border: 1px solid black">
+    <div>
         <h2>Prodotti Collare</h2>
-        <ul>
-            <li>
-                <p>Nome: <?= $collare->name ?></p>
-                <p>Tipologia: <?= $collare->typology ?></p>
-                <p>Quantità: <?= $collare->quantity ?></p>
-                <p>Materiale: <?= $collare->material ?></p>
-                <p>Colore: <?= $collare->color ?></p>
-                <p>Prezzo: <?= $collare->price ?></p>
-            </li>
-        </ul>
+        <p>Nome: <?= $collare->name ?> - Tipologia: <?= $collare->typology ?> - Quantità: <?= $collare->quantity ?> -
+            Materiale: <?= $collare->material ?> - Colore: <?= $collare->color ?> - Prezzo: <?= $collare->price ?></p>
     </div>
 
-    <div style="padding: 10px; margin: 10px; width: 25%; border: 1px solid black">
+    <div>
         <h2>Prodotti Svago</h2>
-        <ul>
-            <li>
-                <p>Nome: <?= $giochi->name ?></p>
-                <p>Tipologia: <?= $giochi->typology ?></p>
-                <p>Quantità: <?= $giochi->quantity ?></p>
-                <p>Materiale: <?= $giochi->material ?></p>
-                <p>Prezzo: <?= $giochi->price ?></p>
-            </li>
-        </ul>
+        <p>Nome: <?= $giochi->name ?> - Tipologia: <?= $giochi->typology ?> - Quantità: <?= $giochi->quantity ?> -
+            Materiale: <?= $giochi->material ?> - Prezzo: <?= $giochi->price ?></p>
     </div>
 
-    <div style="padding: 10px; margin: 10px; width: 25%; border: 1px solid black">
+    <div>
         <h2>Prodotti Cura dell'Animale</h2>
-        <ul>
-            <li>
-                <p>Nome: <?= $prodottiPulizia->name ?></p>
-                <p>Tipologia: <?= $prodottiPulizia->typology ?></p>
-                <p>Quantità: <?= $prodottiPulizia->quantity ?></p>
-                <p>Materiale: <?= $prodottiPulizia->material ?></p>
-                <p>Prezzo: <?= $prodottiPulizia->price ?></p>
-            </li>
-        </ul>
+        <p>Nome: <?= $prodottiPulizia->name ?> - Tipologia: <?= $prodottiPulizia->typology ?> - Quantità: <?= $prodottiPulizia->quantity ?> -
+            Materiale: <?= $prodottiPulizia->material ?> - Prezzo: <?= $prodottiPulizia->price ?></p>
     </div>
 </div>
 
 <?php
 
+$utentiRegistrati = [];
+
+echo "<h2>-----------------------------------------------------------------------------------</h2>";
+echo "<h1>Esempio 1: Creazione di un primo utente non presente nel sistema: </h1>";
+
+require_once __DIR__ . '/Models/Utente.php';
+require_once __DIR__ . '/Models/CartaDiCredito.php';
+
+$cartaDiCredito1 = new CartaDiCredito('Marco Baldini', '3254 3453 6546 2344', '09/23', '356');
+$utente1 = new Utente('Marco', 'Baldini', 'marco.baldini@bing.com', 'Via Umberto I', 'Milano', '3456577565', $cartaDiCredito1);
+
+if ($utente1->registerUser() == $utentiRegistrati) {
+    echo "<h4>Dati relativi all'utente in quanto presente nel sistema: </h4>";
+    var_dump($utente1);
+    echo "<h4>Se è presente nell'array recupero i dati della carta</h4>";
+    echo "<h5>Intestatario: " . $cartaDiCredito1->getAccountholder() .
+        "<br>Numero della carta: " . $cartaDiCredito1->getNumberCard() .
+        "<br>Scadenza: " . $cartaDiCredito1->getDeadline() .
+        "<br>CVV: " . $cartaDiCredito1->getCVV() . "</h5>";
+    // e decremento la quantità di un prodotto, ad esempio una cuccia, sempre se la quantità disponibile non sia uguale a zero
+    try {
+        $cuccia->buyProduct();
+        echo "<h4>L'utente ha acquistato una cuccia, la disponibilità nell'e-commerce relativo al prodotto è stata aggiornata: </h4>"
+        ?>
+            <div>
+                <h2>Prodotti Riposo</h2>
+                <p>Nome: <?= $cuccia->name ?> - Tipologia: <?= $cuccia->typology ?> - Quantità: <?= $cuccia->quantity ?> -
+                    Materiale: <?= $cuccia->material ?> - Taglia: <?= $cuccia->size ?> - Colore: <?= $cuccia->color ?> -
+                    Prezzo: <?= $cuccia->price ?></p>
+            </div>
+        <?php
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+} else {
+    $utentiRegistrati = $utente1->registerUser();
+
+    echo "<h4>Dati relativi all'utente dopo la registrazione in quanto non presente nel sistema: </h4>";
+    var_dump($utentiRegistrati);
+
+    // e decremento la quantità di un prodotto, ad esempio una cuccia, sempre se la quantità disponibile non sia uguale a zero
+    try {
+        $cuccia->buyProduct();
+        echo "<h4>L'utente ha acquistato una cuccia, la disponibilità nell'e-commerce relativo al prodotto è stata aggiornata: </h4>"
+        ?>
+            <div>
+                <h2>Prodotti Riposo</h2>
+                <p>Nome: <?= $cuccia->name ?> - Tipologia: <?= $cuccia->typology ?> - Quantità: <?= $cuccia->quantity ?> -
+                    Materiale: <?= $cuccia->material ?> - Taglia: <?= $cuccia->size ?> - Colore: <?= $cuccia->color ?> -
+                    Prezzo: <?= $cuccia->price ?></p>
+            </div>
+        <?php
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+}
+
+echo "<h2>-----------------------------------------------------------------------------------</h2>";
+echo "<h1>Esempio 2: Lo stesso utente già presente nel sistema effettua un nuovo acquisto ma il prodotto risulta terminato: </h1>";
+
+if ($utente1->registerUser() == $utentiRegistrati) {
+    echo "<h4>Dati relativi all'utente in quanto presente nel sistema: </h4>";
+    var_dump($utente1);
+    echo "<h4>Se è presente nell'array recupero i dati della carta</h4>";
+    echo "<h5>Intestatario: " . $cartaDiCredito1->getAccountholder() .
+        "<br>Numero della carta: " . $cartaDiCredito1->getNumberCard() .
+        "<br>Scadenza: " . $cartaDiCredito1->getDeadline() .
+        "<br>CVV: " . $cartaDiCredito1->getCVV() . "</h5>";
+    // e decremento la quantità di un prodotto, ad esempio una cuccia, sempre se la quantità disponibile non sia uguale a zero
+    try {
+        $prodottiPulizia->buyProduct();
+        echo "<h4>L'utente ha acquistato un prodotto per la pulizia dell'animale, la disponibilità nell'e-commerce relativo al prodotto è stata aggiornata: </h4>"
+        ?>
+            <div>
+                <h2>Prodotti Cura dell'Animale</h2>
+                <p>Nome: <?= $prodottiPulizia->name ?> - Tipologia: <?= $prodottiPulizia->typology ?> - Quantità: <?= $prodottiPulizia->quantity ?> -
+                Materiale: <?= $prodottiPulizia->material ?> - Prezzo: <?= $prodottiPulizia->price ?></p>
+            </div>
+        <?php
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+} else {
+    $utentiRegistrati = $utente1->registerUser();
+
+    echo "<h4>Dati relativi all'utente dopo la registrazione in quanto non presente nel sistema: </h4>";
+    var_dump($utentiRegistrati);
+
+    // e decremento la quantità di un prodotto, ad esempio una cuccia, sempre se la quantità disponibile non sia uguale a zero
+    try {
+        $prodottiPulizia->buyProduct();
+        echo "<h4>L'utente ha acquistato un prodotto per la pulizia dell'animale, la disponibilità nell'e-commerce relativo al prodotto è stata aggiornata: </h4>"
+        ?>
+            <div>
+                <h2>Prodotti Cura dell'Animale</h2>
+                <p>Nome: <?= $prodottiPulizia->name ?> - Tipologia: <?= $prodottiPulizia->typology ?> - Quantità: <?= $prodottiPulizia->quantity ?> -
+                Materiale: <?= $prodottiPulizia->material ?> - Prezzo: <?= $prodottiPulizia->price ?></p>
+            </div>
+        <?php
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+}
+
+echo "<h2>-----------------------------------------------------------------------------------</h2>";
+echo "<h1>Esempio 3: Lo stesso utente già presente nel sistema effettua un nuovo acquisto: </h1>";
+
+if ($utente1->registerUser() == $utentiRegistrati) {
+    echo "<h4>Dati relativi all'utente in quanto presente nel sistema: </h4>";
+    var_dump($utente1);
+    echo "<h4>Se è presente nell'array recupero i dati della carta</h4>";
+    echo "<h5>Intestatario: " . $cartaDiCredito1->getAccountholder() .
+        "<br>Numero della carta: " . $cartaDiCredito1->getNumberCard() .
+        "<br>Scadenza: " . $cartaDiCredito1->getDeadline() .
+        "<br>CVV: " . $cartaDiCredito1->getCVV() . "</h5>";
+    // e decremento la quantità di un prodotto, ad esempio una cuccia, sempre se la quantità disponibile non sia uguale a zero
+    try {
+        $cibo->buyProduct();
+        echo "<h4>L'utente ha acquistato un prodotto alimentare, la disponibilità nell'e-commerce relativo al prodotto è stata aggiornata: </h4>"
+        ?>
+            <div>
+                <h2>Prodotti Alimentari</h2>
+                <p>Nome: <?= $cibo->name ?> - Tipologia: <?= $cibo->typology ?> - Quantità: <?= $cibo->quantity ?>
+                - Materiale: <?= $cibo->material ?> - Data di scadenza: <?= $cibo->expirationDate ?>
+                - Gusto: <?= $cibo->taste ?> - Prezzo: <?= $cibo->price ?></p>
+            </div>
+        <?php
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+} else {
+    $utentiRegistrati = $utente1->registerUser();
+
+    echo "<h4>Dati relativi all'utente dopo la registrazione in quanto non presente nel sistema: </h4>";
+    var_dump($utentiRegistrati);
+
+    // e decremento la quantità di un prodotto, ad esempio una cuccia, sempre se la quantità disponibile non sia uguale a zero
+    try {
+        $cibo->buyProduct();
+        echo "<h4>L'utente ha acquistato un prodotto alimentare, la disponibilità nell'e-commerce relativo al prodotto è stata aggiornata: </h4>"
+        ?>
+            <div>
+                <h2>Prodotti Alimentari</h2>
+                <p>Nome: <?= $cibo->name ?> - Tipologia: <?= $cibo->typology ?> - Quantità: <?= $cibo->quantity ?>
+                - Materiale: <?= $cibo->material ?> - Data di scadenza: <?= $cibo->expirationDate ?>
+                - Gusto: <?= $cibo->taste ?> - Prezzo: <?= $cibo->price ?></p>
+            </div>
+        <?php
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+}
 ?>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+</style>
