@@ -21,5 +21,9 @@
         public function registerUser(){
             return [$this->name, $this->surname, $this->email, $this->address, $this->city, $this->phone, $this->creditCard];
         }
+
+        public function isRegister($_price){
+            return $_price - ((20 * $_price) / 100);
+        }
     }
 ?>

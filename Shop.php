@@ -40,39 +40,39 @@ $prodottiPulizia->setPrice(1.15);
         <h2>Prodotti Alimentari</h2>
         <p>Nome: <?= $cibo->name ?> - Tipologia: <?= $cibo->typology ?> - Quantità: <?= $cibo->quantity ?>
             - Materiale: <?= $cibo->material ?> - Data di scadenza: <?= $cibo->expirationDate ?>
-            - Gusto: <?= $cibo->taste ?> - Prezzo: <?= $cibo->price ?></p>
+            - Gusto: <?= $cibo->taste ?> - Prezzo: €<?= $cibo->price ?></p>
     </div>
 
     <div>
         <h2>Prodotti Riposo</h2>
         <p>Nome: <?= $cuccia->name ?> - Tipologia: <?= $cuccia->typology ?> - Quantità: <?= $cuccia->quantity ?> -
             Materiale: <?= $cuccia->material ?> - Taglia: <?= $cuccia->size ?> - Colore: <?= $cuccia->color ?> -
-            Prezzo: <?= $cuccia->price ?></p>
+            Prezzo: €<?= $cuccia->price ?></p>
     </div>
 
     <div>
         <h2>Prodotti Trasporto</h2>
         <p>Nome: <?= $trasportino->name ?> - Tipologia: <?= $trasportino->typology ?> - Quantità: <?= $trasportino->quantity ?> -
             Materiale: <?= $trasportino->material ?> - Taglia: <?= $trasportino->size ?> - Colore: <?= $trasportino->color ?> -
-            Prezzo: <?= $trasportino->price ?></p>
+            Prezzo: €<?= $trasportino->price ?></p>
     </div>
 
     <div>
         <h2>Prodotti Collare</h2>
         <p>Nome: <?= $collare->name ?> - Tipologia: <?= $collare->typology ?> - Quantità: <?= $collare->quantity ?> -
-            Materiale: <?= $collare->material ?> - Colore: <?= $collare->color ?> - Prezzo: <?= $collare->price ?></p>
+            Materiale: <?= $collare->material ?> - Colore: <?= $collare->color ?> - Prezzo: €<?= $collare->price ?></p>
     </div>
 
     <div>
         <h2>Prodotti Svago</h2>
         <p>Nome: <?= $giochi->name ?> - Tipologia: <?= $giochi->typology ?> - Quantità: <?= $giochi->quantity ?> -
-            Materiale: <?= $giochi->material ?> - Prezzo: <?= $giochi->price ?></p>
+            Materiale: <?= $giochi->material ?> - Prezzo: €<?= $giochi->price ?></p>
     </div>
 
     <div>
         <h2>Prodotti Cura dell'Animale</h2>
         <p>Nome: <?= $prodottiPulizia->name ?> - Tipologia: <?= $prodottiPulizia->typology ?> - Quantità: <?= $prodottiPulizia->quantity ?> -
-            Materiale: <?= $prodottiPulizia->material ?> - Prezzo: <?= $prodottiPulizia->price ?></p>
+            Materiale: <?= $prodottiPulizia->material ?> - Prezzo: €<?= $prodottiPulizia->price ?></p>
     </div>
 </div>
 
@@ -106,7 +106,7 @@ if ($utente1->registerUser() == $utentiRegistrati) {
                 <h2>Prodotti Riposo</h2>
                 <p>Nome: <?= $cuccia->name ?> - Tipologia: <?= $cuccia->typology ?> - Quantità: <?= $cuccia->quantity ?> -
                     Materiale: <?= $cuccia->material ?> - Taglia: <?= $cuccia->size ?> - Colore: <?= $cuccia->color ?> -
-                    Prezzo: <?= $cuccia->price ?></p>
+                    Prezzo: €<?= number_format($utente1->isRegister($cuccia->price), 2)?></p>
             </div>
         <?php
     } catch (Exception $e) {
@@ -127,7 +127,7 @@ if ($utente1->registerUser() == $utentiRegistrati) {
                 <h2>Prodotti Riposo</h2>
                 <p>Nome: <?= $cuccia->name ?> - Tipologia: <?= $cuccia->typology ?> - Quantità: <?= $cuccia->quantity ?> -
                     Materiale: <?= $cuccia->material ?> - Taglia: <?= $cuccia->size ?> - Colore: <?= $cuccia->color ?> -
-                    Prezzo: <?= $cuccia->price ?></p>
+                    Prezzo: €<?= $cuccia->price ?></p>
             </div>
         <?php
     } catch (Exception $e) {
@@ -154,7 +154,7 @@ if ($utente1->registerUser() == $utentiRegistrati) {
             <div>
                 <h2>Prodotti Cura dell'Animale</h2>
                 <p>Nome: <?= $prodottiPulizia->name ?> - Tipologia: <?= $prodottiPulizia->typology ?> - Quantità: <?= $prodottiPulizia->quantity ?> -
-                Materiale: <?= $prodottiPulizia->material ?> - Prezzo: <?= $prodottiPulizia->price ?></p>
+                Materiale: <?= $prodottiPulizia->material ?> - Prezzo: €<?= number_format($utente1->isRegister($prodottiPulizia->price), 2) ?></p>
             </div>
         <?php
     } catch (Exception $e) {
@@ -174,7 +174,7 @@ if ($utente1->registerUser() == $utentiRegistrati) {
             <div>
                 <h2>Prodotti Cura dell'Animale</h2>
                 <p>Nome: <?= $prodottiPulizia->name ?> - Tipologia: <?= $prodottiPulizia->typology ?> - Quantità: <?= $prodottiPulizia->quantity ?> -
-                Materiale: <?= $prodottiPulizia->material ?> - Prezzo: <?= $prodottiPulizia->price ?></p>
+                Materiale: <?= $prodottiPulizia->material ?> - Prezzo: €<?= $prodottiPulizia->price ?></p>
             </div>
         <?php
     } catch (Exception $e) {
@@ -202,7 +202,7 @@ if ($utente1->registerUser() == $utentiRegistrati) {
                 <h2>Prodotti Alimentari</h2>
                 <p>Nome: <?= $cibo->name ?> - Tipologia: <?= $cibo->typology ?> - Quantità: <?= $cibo->quantity ?>
                 - Materiale: <?= $cibo->material ?> - Data di scadenza: <?= $cibo->expirationDate ?>
-                - Gusto: <?= $cibo->taste ?> - Prezzo: <?= $cibo->price ?></p>
+                - Gusto: <?= $cibo->taste ?> - Prezzo: €<?= number_format($utente1->isRegister($cibo->price), 2)?></p>
             </div>
         <?php
     } catch (Exception $e) {
@@ -223,7 +223,7 @@ if ($utente1->registerUser() == $utentiRegistrati) {
                 <h2>Prodotti Alimentari</h2>
                 <p>Nome: <?= $cibo->name ?> - Tipologia: <?= $cibo->typology ?> - Quantità: <?= $cibo->quantity ?>
                 - Materiale: <?= $cibo->material ?> - Data di scadenza: <?= $cibo->expirationDate ?>
-                - Gusto: <?= $cibo->taste ?> - Prezzo: <?= $cibo->price ?></p>
+                - Gusto: <?= $cibo->taste ?> - Prezzo: €<?= $cibo->price ?></p>
             </div>
         <?php
     } catch (Exception $e) {
